@@ -112,9 +112,9 @@ resource "aws_subnet" "private_b" {
 }
 
 
-################################
+#################################
 # Endpoints to allow ECS to ECR, Cloudwatch and Systems Manager
-################################
+#################################
 
 resource "aws_security_group" "endpoint_access" {
   description = "Access to endpoints"
@@ -145,7 +145,6 @@ resource "aws_vpc_endpoint" "ecr" {
     Name = "${local.prefix}-ecr-endpoint"
   }
 }
-
 
 resource "aws_vpc_endpoint" "dkr" {
   vpc_id              = aws_vpc.main.id
