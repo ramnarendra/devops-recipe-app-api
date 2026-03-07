@@ -9,9 +9,9 @@ resource "aws_vpc" "main" {
   
 }
 
-#############################
+##############################
 # Internet Gateway needed for inbound access to the ALB
-#############################
+##############################
 resource "aws_internet_gateway" "name" {
     vpc_id = aws_vpc.main.id
     tags = {
