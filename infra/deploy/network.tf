@@ -29,7 +29,7 @@ resource "aws_subnet" "public_a" {
   availability_zone       = "${data.aws_region.current.name}a"
 
   tags = {
-    Name = "${local.prefix}=public-a"
+    Name = "${local.prefix}-public-a"
   }
 }
 
