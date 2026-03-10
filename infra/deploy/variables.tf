@@ -21,4 +21,3 @@ variable "db_username" {
 variable "db_password" {
   description = "Password for the recipe app api database from Terraform"
 }
-
